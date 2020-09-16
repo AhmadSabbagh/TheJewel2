@@ -1,8 +1,10 @@
-package com.am.engsabbagh.thejewel;
+package com.am.engsabbagh.thejewel.Pogo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.am.engsabbagh.thejewel.R;
 
 public class LanguageOptionAvtivity extends AppCompatActivity {
 

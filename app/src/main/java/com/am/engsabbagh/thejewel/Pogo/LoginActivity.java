@@ -1,14 +1,16 @@
-package com.am.engsabbagh.thejewel;
+package com.am.engsabbagh.thejewel.Pogo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class PrivacyPolicy extends AppCompatActivity {
+import com.am.engsabbagh.thejewel.R;
+
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_privacy_policy);
+        setContentView(R.layout.activity_login);
     }
 }

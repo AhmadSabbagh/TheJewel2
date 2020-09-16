@@ -1,14 +1,16 @@
-package com.am.engsabbagh.thejewel;
+package com.am.engsabbagh.thejewel.Pogo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class LoginActivity extends AppCompatActivity {
+import com.am.engsabbagh.thejewel.R;
+
+public class WelcomePage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_welcome_page);
     }
 }

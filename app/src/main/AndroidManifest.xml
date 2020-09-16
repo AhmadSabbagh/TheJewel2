@@ -9,12 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestActivity"></activity>
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".PrivacyPolicy" />
-        <activity android:name=".LanguageOptionAvtivity" />
-        <activity android:name=".WelcomePage">
+        <activity android:name=".Pogo.RegisterActivity"></activity>
+        <activity android:name=".Pogo.LoginActivity" />
+        <activity android:name=".Pogo.PrivacyPolicy" />
+        <activity android:name=".Pogo.LanguageOptionAvtivity" />
+        <activity android:name=".Pogo.WelcomePage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
