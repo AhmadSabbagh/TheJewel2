@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TheJewel</string>
+    <string name="api_link">http://saudisouq-001-site1.atempurl.com/dal/api.asmx/</string>
 </resources>
