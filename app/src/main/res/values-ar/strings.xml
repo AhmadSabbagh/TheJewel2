@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الجوهرة</string>
+    <string name="api_link">http://saudisouq-001-site1.atempurl.com/dal/api.asmx/</string>
+    <string name="username_reg_page">اسم المستخدم</string>
+    <string name="password_reg_page">كلمة السر</string>
+    <string name="confirm_pass_reg_page">تأكيد كلمة السر</string>
+    <string name="email_reg_page">البريد الالكتروني</string>
+    <string name="phone_reg_page">رقم الهاتف</string>
+    <string name="adress_reg_page">العنوان</string>
+    <string name="city_reg_page">المدينة</string>
+    <string name="Reg_button">تسجيل</string>
+
+</resources>

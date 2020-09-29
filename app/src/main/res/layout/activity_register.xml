@@ -8,11 +8,14 @@
     tools:context=".UI.RegisterActivity">
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/user_photo"
         android:layout_width="258dp"
         android:layout_height="293dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="81dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="88dp"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
@@ -24,7 +27,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/imageView5"
+        android:layout_below="@id/user_photo"
         android:layout_alignParentBottom="true"
 
         android:foregroundGravity="center">
@@ -57,8 +60,9 @@
                     android:ems="10"
                     android:foregroundGravity="center"
                     android:gravity="center"
-                    android:hint="Username"
+                    android:hint="@string/username_reg_page"
                     android:inputType="textPersonName"
+                    android:text="Ahmads"
                     android:textAlignment="center" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -81,8 +85,9 @@
                     android:ems="10"
                     android:foregroundGravity="center"
                     android:gravity="center"
-                    android:hint="Password"
+                    android:hint="@string/password_reg_page"
                     android:inputType="textPassword"
+                    android:text="1234567890"
                     android:textAlignment="center" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -106,8 +111,9 @@
                     android:ems="10"
                     android:foregroundGravity="center"
                     android:gravity="center"
-                    android:hint="Confirm Password"
+                    android:hint="@string/confirm_pass_reg_page"
                     android:inputType="textPassword"
+                    android:text="1234567890"
                     android:textAlignment="center" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -130,8 +136,9 @@
                     android:ems="10"
                     android:foregroundGravity="center"
                     android:gravity="center"
-                    android:hint="Email"
+                    android:hint="@string/email_reg_page"
                     android:inputType="textPersonName"
+                    android:text="ahmad_sabbagh8@hotmail.com"
                     android:textAlignment="center" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -154,8 +161,9 @@
                     android:ems="10"
                     android:foregroundGravity="center"
                     android:gravity="center"
-                    android:hint="Phone Number"
+                    android:hint="@string/phone_reg_page"
                     android:inputType="phone"
+                    android:text="07367338600"
                     android:textAlignment="center" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -179,8 +187,9 @@
                     android:ems="10"
                     android:foregroundGravity="center"
                     android:gravity="center"
-                    android:hint="City"
+                    android:hint="@string/city_reg_page"
                     android:inputType="textPersonName"
+                    android:text="manchester"
                     android:textAlignment="center" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -203,8 +212,9 @@
                     android:ems="10"
                     android:foregroundGravity="center"
                     android:gravity="center"
-                    android:hint="Address"
+                    android:hint="@string/adress_reg_page"
                     android:inputType="textPersonName"
+                    android:text="Sharston"
                     android:textAlignment="center" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -217,7 +227,7 @@
                 android:background="@drawable/register_acivity_button"
                 android:foregroundGravity="center"
                 android:gravity="center"
-                android:text="Register"
+                android:text="@string/Reg_button"
                 android:textColor="#FFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

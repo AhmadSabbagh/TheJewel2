@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">TheJewel</string>
     <string name="api_link">http://saudisouq-001-site1.atempurl.com/dal/api.asmx/</string>
+    <string name="username_reg_page">Username</string>
+    <string name="password_reg_page">Password</string>
+    <string name="confirm_pass_reg_page">Confirm Password</string>
+    <string name="email_reg_page">Email</string>
+    <string name="phone_reg_page">Phone Number</string>
+    <string name="adress_reg_page">Address</string>
+    <string name="city_reg_page">City</string>
+    <string name="Reg_button">Register</string>
+
+
+
+
 </resources>

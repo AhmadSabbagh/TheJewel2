@@ -29,7 +29,7 @@ public class Webservice {
 
 
 
-    public void Register(final Context activity, final String user_name, final String password_, final String email_, final String phone_number, final String city_, final String adress_) {
+    public void Register(final Context activity, final String user_name, final String password_, final String email_, final String phone_number, final String city_, final String adress_, final String photo) {
         String requestUrl = activity.getString(R.string.api_link) + "sign_up";
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, requestUrl, new Response.Listener<String>() {
@@ -99,7 +99,7 @@ public class Webservice {
                 params.put("conf_password", password_);
                 params.put("email", email_);
                 params.put("country",city_); // Design should updated
-               // params.put("picture",photo );// Design should updated
+               params.put("picture",photo );// Design should updated
                 params.put("address",adress_ );
 
 
