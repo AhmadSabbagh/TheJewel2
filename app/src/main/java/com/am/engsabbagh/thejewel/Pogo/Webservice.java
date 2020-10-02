@@ -22,13 +22,14 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Webservice {
 
 
-
+//this is for register activity
     public void Register(final Context activity, final String user_name, final String password_, final String email_, final String phone_number, final String city_, final String adress_) {
         String requestUrl = activity.getString(R.string.api_link) + "sign_up";
 
@@ -108,4 +109,47 @@ public class Webservice {
         };
         Volley.newRequestQueue(activity).add(stringRequest);
     }
+//---------------------------------------Login WebService-------------------------------------------
+    public void Login(final Context activity, final String Username,final String Password)
+    {
+        String RequestURL=activity.getString(R.string.api_link)+"Login";  //url for server login
+        StringRequest stringRequestLogin=new StringRequest(Request.Method.POST, RequestURL, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Log.d("Volley Login Result", "" + response); //return the response from the server
+            if (response != null) {
+                   if (response.contains("succ")) {
+                        try {
+                            JSONObject jsonObject = new JSONObject(response); //get the response as json data and display the id
+                            String id = String.valueOf(jsonObject.getInt("customer_id"));
+                            Toast.makeText(activity, "Customer ID is:" + id, Toast.LENGTH_SHORT).show(); //display the id of the customer
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }  //end if response contains
+               }// end if responde
+         } // end void OnResponde response
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("Volley Error",error.toString());  // display error message
+            }
+        }
+        )
+        {
+            @Override
+            //sending data to server
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                params.put("username",Username); // keys uswername is from api and it is as key
+                params.put("password",Password);
+                return params;
+            }
+        };
+Volley.newRequestQueue(activity).add(stringRequestLogin);
 }
+//---------------------------------------End Login -------------------------------------------------
+
+}//end class webservice
+

@@ -3,7 +3,6 @@ package com.am.engsabbagh.thejewel.UI;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,9 +16,9 @@ import butterknife.ButterKnife;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    @BindView(R.id.username)
+    @BindView(R.id.edittxt_username)
     TextInputEditText username;
-    @BindView(R.id.password)
+    @BindView(R.id.edittext_password)
     TextInputEditText password;
     @BindView(R.id.confirmpassword)
     TextInputEditText confirmpassword;
