@@ -10,5 +10,12 @@
     <string name="adress_reg_page">العنوان</string>
     <string name="city_reg_page">المدينة</string>
     <string name="Reg_button">تسجيل</string>
+    <string name="Reg_thanks">شكرا على تسجيلك معنا </string>
+    <string name="Unkown_Error">خطا غير واضح من فضلك تاكد من الاتصال وحاول لاحقا </string>
+    <string name="user_exist">المستخدم موجود </string>
+    <string name="data_incorrect">من فضلك ادخل معلومات صحيحة</string>
+    <string name="check_internet_connection">تاكد من اتصالك بالانترنت</string>
+
+
 
 </resources>

@@ -9,6 +9,15 @@
     <string name="adress_reg_page">Address</string>
     <string name="city_reg_page">City</string>
     <string name="Reg_button">Register</string>
+    <string name="Reg_thanks">Thank you for your Regestration with us </string>
+    <string name="Unkown_Error">Unknown Error please try again Later </string>
+    <string name="user_exist">User is already exist please try diffrent inputs</string>
+    <string name="data_incorrect">Please Enter Valid Data</string>
+    <string name="check_internet_connection">Check Internet Connection</string>
+
+
+
+
 
 
 

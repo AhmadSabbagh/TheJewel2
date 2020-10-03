@@ -30,7 +30,7 @@ public class Webservice {
 
 
 //this is for register activity
-    public void Register(final Context activity, final String user_name, final String password_, final String email_, final String phone_number, final String city_, final String adress_) {
+    public void Register(final Context activity, final String user_name, final String password_, final String email_, final String phone_number, final String city_, final String adress_,final String photo) {
         String requestUrl = activity.getString(R.string.api_link) + "sign_up";
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, requestUrl, new Response.Listener<String>() {
@@ -44,9 +44,14 @@ public class Webservice {
                            // AttolSharedPreference attolSharedPreference = new AttolSharedPreference((Activity) activity);
                             String id = String.valueOf(jo.getInt("customer_id"));
                            // attolSharedPreference.setKey("id", id);
-                            Toast.makeText(activity, " Thank you for registration", Toast.LENGTH_LONG).show();
+                            Toast.makeText(activity, activity.getResources().getString(R.string.Reg_thanks), Toast.LENGTH_LONG).show();
+                            RegisterActivity.regProgressBar.setVisibility(View.GONE);
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            RegisterActivity.regProgressBar.setVisibility(View.GONE);
+                            Toast.makeText(activity, activity.getResources().getString(R.string.Unkown_Error), Toast.LENGTH_LONG).show();
+
+
                         }
 
                         //Register_Page.loading.setVisibility(View.GONE);
@@ -61,20 +66,32 @@ public class Webservice {
 
 
                     } else if (response.contains("Incorrect")) {
-                        Toast.makeText(activity, "Data Incorrect", Toast.LENGTH_LONG).show();
+                        Toast.makeText(activity, activity.getResources().getString(R.string.data_incorrect), Toast.LENGTH_LONG).show();
+                        RegisterActivity.regProgressBar.setVisibility(View.GONE);
 
                         //Register_Page.loading.setVisibility(View.GONE);
 
                     }
-                    else if (response.contains("exists")) {
-                        Toast.makeText(activity, "The user is already exsist", Toast.LENGTH_LONG).show();
+                    else if (response.contains("incorrect")) {
+                        Toast.makeText(activity, activity.getResources().getString(R.string.data_incorrect), Toast.LENGTH_LONG).show();
+                        RegisterActivity.regProgressBar.setVisibility(View.GONE);
+
+                        //Register_Page.loading.setVisibility(View.GONE);
+
+                    }
+                    else if (response.contains("exist")) {
+                        Toast.makeText(activity, activity.getResources().getString(R.string.user_exist), Toast.LENGTH_LONG).show();
                         // Register_Page.loading.setVisibility(View.GONE);
 
+                        RegisterActivity.regProgressBar.setVisibility(View.GONE);
 
                     }
                 }
                 else {
                     // Register_Page.loading.setVisibility(View.GONE);
+                    RegisterActivity.regProgressBar.setVisibility(View.GONE);
+                    Toast.makeText(activity, activity.getResources().getString(R.string.Unkown_Error), Toast.LENGTH_LONG).show();
+
 
                 }
             }
@@ -83,9 +100,11 @@ public class Webservice {
             public void onErrorResponse(VolleyError error) {
                 error.printStackTrace(); //log the error resulting from the request for diagnosis/debugging
 
-                Toast.makeText(activity,"Check Internet Connection try again later please OR try to sign in",Toast.LENGTH_LONG).show();
+                Toast.makeText(activity, activity.getResources().getString(R.string.Unkown_Error), Toast.LENGTH_LONG).show();
                 Log.e("Volley Result",  "Error"+error.getLocalizedMessage()); //the response contains the result from the server, a json string or any other object returned by your server
                 // Register_Page.loading.setVisibility(View.GONE);
+                RegisterActivity.regProgressBar.setVisibility(View.GONE);
+
 
             }
         }) {
@@ -100,7 +119,7 @@ public class Webservice {
                 params.put("conf_password", password_);
                 params.put("email", email_);
                 params.put("country",city_); // Design should updated
-               // params.put("picture",photo );// Design should updated
+                params.put("picture",photo );// Design should updated
                 params.put("address",adress_ );
 
 

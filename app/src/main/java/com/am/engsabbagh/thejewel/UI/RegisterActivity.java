@@ -4,9 +4,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.am.engsabbagh.thejewel.HelperClass.Check_connection;
 import com.am.engsabbagh.thejewel.HelperClass.Message;
 import com.am.engsabbagh.thejewel.Pogo.Webservice;
 import com.am.engsabbagh.thejewel.R;
@@ -17,9 +20,9 @@ import butterknife.ButterKnife;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    @BindView(R.id.username)
+    @BindView(R.id.edittxt_username)
     TextInputEditText username;
-    @BindView(R.id.password)
+    @BindView(R.id.edittext_password)
     TextInputEditText password;
     @BindView(R.id.confirmpassword)
     TextInputEditText confirmpassword;
@@ -69,12 +72,14 @@ public class RegisterActivity extends AppCompatActivity {
             "UAFFFFABRRRQAUUUUAFFFFAH/9k=\n";
     @BindView(R.id.user_photo)
     ImageView userPhoto;
+    public static ProgressBar regProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         ButterKnife.bind(this);
+        regProgressBar=findViewById(R.id.reg_progress_bar);
         Reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -118,8 +123,17 @@ public class RegisterActivity extends AppCompatActivity {
         } else if (!password_.equals(confirm_password)) {
             Message m = new Message("Passwords don't match", this);
         } else {
-            Webservice webservice = new Webservice();
-            webservice.Register(this, user_name, password_, email_, phone_number, city_, adress_, photo);
+            int internet_starus = new Check_connection().check_intrenet_connection(this);
+            if( internet_starus==1) {
+                Webservice webservice = new Webservice();
+                webservice.Register(this, user_name, password_, email_, phone_number, city_, adress_, photo);
+                regProgressBar.setVisibility(View.VISIBLE);
+            }
+            else
+            {
+                Message m = new Message(getResources().getString(R.string.check_internet_connection), this);
+
+            }
         }
 
     }
