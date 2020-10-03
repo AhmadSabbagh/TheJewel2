@@ -2,7 +2,11 @@ package com.am.engsabbagh.thejewel.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -10,6 +14,8 @@ import android.widget.Toast;
 
 import com.am.engsabbagh.thejewel.Pogo.Webservice;
 import com.am.engsabbagh.thejewel.R;
+
+import java.util.Locale;
 
 public class LoginActivity extends AppCompatActivity {
     EditText username;  //username
@@ -23,6 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
         username=(EditText)findViewById(R.id.edittxt_username);
         password=(EditText)findViewById(R.id.edittext_password);
         login_btn=(Button)findViewById(R.id.login); // button login
@@ -30,6 +37,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 login();
+
                 Toast.makeText(LoginActivity.this, "Button is Pressed", Toast.LENGTH_SHORT).show();
             }
         });
@@ -57,6 +65,8 @@ public class LoginActivity extends AppCompatActivity {
         }
 
     }
+//--------------------------------------------------------------------------------------------------
+    //-> Change the Language of app
 
-
+//--------------------------------------------------------------------------------------------------
 }
