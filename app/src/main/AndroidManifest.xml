@@ -18,7 +18,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".test10"></activity>
+        <activity android:name=".test11"></activity>
+        <activity android:name=".test10" />
         <activity android:name=".test7" />
         <activity android:name=".UI.test8" />
         <activity android:name=".UI.test6" />
