@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">TheJewel</string>
     <string name="api_link">http://saudisouq-001-site1.atempurl.com/dal/api.asmx/</string>
+
+    <!--
+    @RegisterActivity
+    -->
     <string name="username_reg_page">Username</string>
     <string name="password_reg_page">Password</string>
     <string name="confirm_pass_reg_page">Confirm Password</string>
@@ -9,6 +13,20 @@
     <string name="adress_reg_page">Address</string>
     <string name="city_reg_page">City</string>
     <string name="Reg_button">Register</string>
+
+    <!---
+    @Comment
+    @LoginActivity
+      -->
+    <string name="signIn_LoginActivity">Sign In</string>
+    <string name="you_dont_have_account_LoginActivity">Have No Account?</string>
+    <string name="loginasguest_LoginActivity">Sign in as guest</string>
+    <string name="forget_LoginActivity">Forget?</string>
+    <string name="RememeberMe_LoginActivity">Rememeber Me</string>
+
+    <!---
+    ================================================================================================
+    -->
 
 
 
