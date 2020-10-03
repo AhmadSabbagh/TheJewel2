@@ -23,6 +23,7 @@
             android:name=".UI.RegisterActivity"
             android:exported="true" />
         <activity android:name=".UI.LanguageOptionAvtivity" />
+        <activity android:name=".UI.test2" />
         <activity android:name=".UI.PrivacyPolicy" />
         <activity android:name=".UI.WelcomePage" />
         <activity android:name=".UI.LoginActivity">
