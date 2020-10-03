@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.am.engsabbagh.thejewel.R;
+
 public class test8 extends AppCompatActivity {
 
     @Override
