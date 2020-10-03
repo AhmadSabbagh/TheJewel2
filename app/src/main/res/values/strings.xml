@@ -20,9 +20,6 @@
     <string name="check_internet_connection">Check Internet Connection</string>
 
 
-
-
-
     <!---
     @Comment
     @LoginActivity
@@ -36,8 +33,6 @@
     <!---
     ================================================================================================
     -->
-
-
 
 
 </resources>
