@@ -37,6 +37,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 login();
+                //setLocale("ar");  //just for trying tost different language
 
                 Toast.makeText(LoginActivity.this, "Button is Pressed", Toast.LENGTH_SHORT).show();
             }
@@ -67,6 +68,16 @@ public class LoginActivity extends AppCompatActivity {
     }
 //--------------------------------------------------------------------------------------------------
     //-> Change the Language of app
-
+/*public void setLocale(String lang) {
+    Locale myLocale = new Locale(lang);
+    Resources res = getResources();
+    DisplayMetrics dm = res.getDisplayMetrics();
+    Configuration conf = res.getConfiguration();
+    conf.locale = myLocale;
+    res.updateConfiguration(conf, dm);
+    Intent refresh = new Intent(this, LoginActivity.class);
+    finish();
+    startActivity(refresh);
+}*/
 //--------------------------------------------------------------------------------------------------
 }

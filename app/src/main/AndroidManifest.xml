@@ -18,7 +18,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-         <activity
+
+        <activity
             android:name=".UI.RegisterActivity"
             android:exported="true" />
         <activity android:name=".UI.LanguageOptionAvtivity" />

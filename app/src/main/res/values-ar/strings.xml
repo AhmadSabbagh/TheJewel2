@@ -15,7 +15,15 @@
     <string name="user_exist">المستخدم موجود </string>
     <string name="data_incorrect">من فضلك ادخل معلومات صحيحة</string>
     <string name="check_internet_connection">تاكد من اتصالك بالانترنت</string>
-
+<!--
+Login Activity Strings
+-->
+    <string name="signIn_LoginActivity">تسجيل الدخول</string>
+    <string name="you_dont_have_account_LoginActivity">ليس لديك حساب؟</string>
+    <string name="loginasguest_LoginActivity">الدخول كضيف</string>
+    <string name="forget_LoginActivity">هل نسيت؟</string>
+    <string name="RememeberMe_LoginActivity">تذكرني</string>
+    <!--**************************************************************************************************-->
 
 
 </resources>
