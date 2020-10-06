@@ -24,6 +24,11 @@ Login Activity Strings
     <string name="forget_LoginActivity">هل نسيت؟</string>
     <string name="RememeberMe_LoginActivity">تذكرني</string>
     <!--**************************************************************************************************-->
+    <!--LanguageActivityOption-->
+    <string name="selectLanguage_LanguageActivityOption">اختر اللغة</string>
+    <string name="arabicLanguage_LanguageActivityOption">العربية</string>
+    <string name="EnglishLanguage_LanguageActivityOption">الإنكليزية</string>
+    <!--*************************************************************************************************-->
 
 
 </resources>

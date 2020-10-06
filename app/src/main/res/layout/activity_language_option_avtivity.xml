@@ -4,6 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/language_activity_background"
     tools:context=".UI.LanguageOptionAvtivity">
 
+    <Button
+        android:id="@+id/chooselanguage"
+        style="@style/Font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="352dp"
+        android:background="@drawable/language_activity_select"
+        android:text="@string/selectLanguage_LanguageActivityOption"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/arabiclanguageselect"
+        style="@style/Font"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/language_activity_button_arabic"
+        android:text="@string/arabicLanguage_LanguageActivityOption"
+        android:textAlignment="center"
+        android:textColor="#F5AF4B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooselanguage" />
+
+    <Button
+        android:id="@+id/englishlanguageselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/language_activity_button_english"
+        android:textSize="20sp"
+        android:text="@string/EnglishLanguage_LanguageActivityOption"
+        
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arabiclanguageselect"
+        app:layout_constraintVertical_bias="0.086" />
 </androidx.constraintlayout.widget.ConstraintLayout>
