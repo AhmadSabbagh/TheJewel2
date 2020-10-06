@@ -18,14 +18,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".UI.StartActivity"></activity>
+        <activity android:name=".UI.LoginActivity"></activity>
         <activity
             android:name=".UI.RegisterActivity"
             android:exported="true" />
         <activity android:name=".UI.LanguageOptionAvtivity" />
         <activity android:name=".UI.PrivacyPolicy" />
         <activity android:name=".UI.WelcomePage" />
-        <activity android:name=".UI.LoginActivity">
+        <activity android:name=".UI.StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
