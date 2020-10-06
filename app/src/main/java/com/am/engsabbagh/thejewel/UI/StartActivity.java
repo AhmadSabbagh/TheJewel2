@@ -22,7 +22,7 @@ public class StartActivity extends AppCompatActivity {
             @Override
             public void run() {
                 /* Create an Intent that will start the Menu-Activity. */
-                Intent mainIntent = new Intent(StartActivity.this, PrivacyPolicy.class);
+                Intent mainIntent = new Intent(StartActivity.this, LanguageOptionAvtivity.class);
                 StartActivity.this.startActivity(mainIntent);
                 StartActivity.this.finish();
             }
