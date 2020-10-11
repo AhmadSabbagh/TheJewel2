@@ -4,56 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/language_activity_background"
     tools:context=".UI.LanguageOptionAvtivity">
 
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/language_activity_background" />
+
     <Button
-        android:id="@+id/chooselanguage"
+        android:id="@+id/selectlanguage"
         style="@style/Font"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="352dp"
-        android:background="@drawable/language_activity_select"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/language_activity_selectlanguage"
         android:text="@string/selectLanguage_LanguageActivityOption"
         android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
-        android:id="@+id/arabiclanguageselect"
+        android:id="@+id/arabic"
         style="@style/Font"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="52dp"
-        android:background="@drawable/language_activity_button_arabic"
-        android:text="@string/arabicLanguage_LanguageActivityOption"
-        android:textAlignment="center"
-        android:textColor="#F5AF4B"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chooselanguage" />
-
-    <Button
-        android:id="@+id/englishlanguageselect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="@drawable/language_activity_button_english"
-        android:textSize="20sp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/language_activity_arabicenglish"
+        android:text="@string/arabicLanguage_LanguageActivityOption"
+        android:textAllCaps="false"
+        android:textColor="#F5AF4B"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/english"
+        app:layout_constraintEnd_toEndOf="@+id/selectlanguage"
+        app:layout_constraintStart_toStartOf="@+id/selectlanguage"
+        app:layout_constraintTop_toBottomOf="@+id/selectlanguage" />
+
+    <Button
+        android:id="@+id/english"
+        style="@style/Font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/language_activity_arabicenglish"
         android:text="@string/EnglishLanguage_LanguageActivityOption"
-        
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/arabiclanguageselect"
-        app:layout_constraintVertical_bias="0.086" />
+        android:textAllCaps="false"
+        android:textColor="#F5AF4B"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/barrier2"
+        app:layout_constraintEnd_toEndOf="@+id/arabic"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/arabic"
+        app:layout_constraintTop_toBottomOf="@+id/arabic" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
