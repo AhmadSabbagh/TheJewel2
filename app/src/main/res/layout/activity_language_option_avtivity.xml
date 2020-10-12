@@ -46,6 +46,7 @@
         android:textAllCaps="false"
         android:textColor="#F5AF4B"
         android:textSize="20dp"
+
         app:layout_constraintBottom_toTopOf="@+id/english"
         app:layout_constraintEnd_toEndOf="@+id/selectlanguage"
         app:layout_constraintStart_toStartOf="@+id/selectlanguage"

@@ -10,7 +10,7 @@
 <!--support arabic font layout-->
     <style name="Font">
         <item name="android:fontFamily">@font/a_jannat_lt</item>
-    </style>
+            </style>
 
 
 

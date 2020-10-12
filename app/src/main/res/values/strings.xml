@@ -36,7 +36,7 @@
     -->
     <!--LanguageActivity-->
     <string name="selectLanguage_LanguageActivityOption">Select Language</string>
-    <string name="arabicLanguage_LanguageActivityOption">Arabic</string>
+    <string name="arabicLanguage_LanguageActivityOption">العربية</string>
     <string name="EnglishLanguage_LanguageActivityOption">English</string>
 <!--*************************************************************************************************-->
 
