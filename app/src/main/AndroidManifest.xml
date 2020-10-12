@@ -24,7 +24,6 @@
             android:exported="true" />
         <activity android:name=".UI.LanguageOptionAvtivity" />
         <activity android:name=".UI.PrivacyPolicy" />
-        <activity android:name=".UI.WelcomePage" />
         <activity android:name=".UI.StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
