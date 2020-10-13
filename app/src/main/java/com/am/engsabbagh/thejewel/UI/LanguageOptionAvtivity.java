@@ -28,13 +28,11 @@ public class LanguageOptionAvtivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_language_option_avtivity);
-
         LanguageLoaded=attolSharedPreference.getKey("languageSelected"); // load the language that is saved
         LanguageSaved(); // check language
         SelectLanguage=(Button)findViewById(R.id.selectlanguage); // select language button
         Arabic=(Button)findViewById(R.id.arabic);  //arabic language
         English=(Button)findViewById(R.id.english);  //english language
-
         Arabic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
