@@ -29,6 +29,9 @@ Login Activity Strings
     <string name="arabicLanguage_LanguageActivityOption">العربية</string>
     <string name="EnglishLanguage_LanguageActivityOption">الإنكليزية</string>
     <!--*************************************************************************************************-->
+    <!-- PrivacyPolicy Activity-->
+    <string name="privacyArabic_PrivacyPolicy">سياسة التطبيق بالعربية</string>
+    <!--******************************************************************************************-->
 
 
 </resources>

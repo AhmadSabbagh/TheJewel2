@@ -39,5 +39,8 @@
     <string name="arabicLanguage_LanguageActivityOption">العربية</string>
     <string name="EnglishLanguage_LanguageActivityOption">English</string>
 <!--*************************************************************************************************-->
+   <!-- PrivacyPolicy Activity-->
+    <string name="privacyArabic_PrivacyPolicy">English Privacy Policy</string>
+    <!--******************************************************************************************-->
 
 </resources>
