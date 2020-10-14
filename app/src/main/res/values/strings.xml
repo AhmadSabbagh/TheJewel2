@@ -40,7 +40,26 @@
     <string name="EnglishLanguage_LanguageActivityOption">English</string>
 <!--*************************************************************************************************-->
    <!-- PrivacyPolicy Activity-->
-    <string name="privacyArabic_PrivacyPolicy">English Privacy Policy</string>
+    <string name="privacy_PrivacyPolicy">
+        Application Privacy determines that  Application Privacy determines that  Application Privacy determines that
+         Application Privacy determines that  Application Privacy determines that  Application Privacy determines that
+        Application Privacy determines that  Application Privacy determines that  Application Privacy determines that
+        Application Privacy determines that  Application Privacy determines that  Application Privacy determines that
+        Application Privacy determines that  Application Privacy determines that  Application Privacy determines that
+           Application Privacy determines that  Application Privacy determines that  Application Privacy determines that
+         Application Privacy determines that  Application Privacy determines that  Application Privacy determines that
+        Application Privacy determines that  Application Privacy determines that  Application Privacy determines that
+        Application Privacy determines that  Application Privacy determines that  Application Privacy determines that
+        Application Privacy determines that  Application Privacy determines that  Application Privacy determines that
+           Application Privacy determines that  Application Privacy determines that  Application Privacy determines that
+           Application Privacy determines that  Application Privacy determines that  Application Privacy determines that
+         Application Privacy determines that  Application Privacy determines that  Application Privacy determines that
+        Application Privacy determines that  Application Privacy determines that  Application Privacy determines that
+        Application Privacy determines that  Application Privacy determines that  Application Privacy determines that
+        Application Privacy determines that  Application Privacy determines that  Application Privacy determines that
+    </string>
+    <string name="acceptprivacypolicy_privacyPolicy">I accept privacy policy of application</string>
+
     <!--******************************************************************************************-->
 
 </resources>

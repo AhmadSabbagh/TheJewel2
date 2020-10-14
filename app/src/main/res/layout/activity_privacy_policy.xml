@@ -6,15 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".UI.PrivacyPolicy">
 
-    <TextView
-        android:id="@+id/textView"
+    <ImageView
+        android:id="@+id/imageView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:textSize="25dp"
-        android:text="@string/privacyArabic_PrivacyPolicy"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/privacpolicy_downbackground_background" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="410dp"
+        android:layout_height="338dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/privacypolicy_upbackground" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="408dp"
+        android:layout_height="167dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/Font"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/privacy_PrivacyPolicy"
+
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/acceptprivacypolicy_privacyPolicy" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="scrollView3,imageView10"
+        tools:layout_editor_absoluteY="735dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
