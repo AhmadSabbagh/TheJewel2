@@ -1,8 +1,10 @@
-package com.am.engsabbagh.thejewel;
+package com.am.engsabbagh.thejewel.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.am.engsabbagh.thejewel.R;
 
 public class CountryChooser extends AppCompatActivity {
 

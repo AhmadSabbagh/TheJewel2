@@ -6,9 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.Toast;
 
-import com.am.engsabbagh.thejewel.CountryChooser;
 import com.am.engsabbagh.thejewel.HelperClass.AttolSharedPreference;
 import com.am.engsabbagh.thejewel.R;
 

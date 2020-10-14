@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".CountryChooser"></activity>
+        <activity android:name=".UI.CountryChooser"></activity>
         <activity android:name=".UI.LoginActivity" />
         <activity
             android:name=".UI.RegisterActivity"
