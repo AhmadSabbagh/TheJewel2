@@ -46,6 +46,15 @@
     <!--Chooser Country Selection-->
     <string name="SelectCountry_CountryChooser">Select Country</string>
     <!--************************************************************************************************-->
+    <!--Login Actvity-->
+    <string name="Signin_LoginActivity">Sign in</string>
+    <string name="Username_LoginActivtiy">Username</string>
+    <String name="Password_LoginActivity">Password</String>
+    <string name="Rememberme_LoginActivity">Remember Me</string>
+    <String name="Forget_LoginActivity">Forget?</String>
+    <String name="HaveNoAccount_LoginActivity">Have No Account?</String>
+    <String name="SigninAsGuest_LoginActivity">Sign in As Guest</String>
+<!--**********************************************************************************************-->
 
 
 </resources>

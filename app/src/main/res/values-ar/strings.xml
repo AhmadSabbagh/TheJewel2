@@ -35,6 +35,15 @@ Login Activity Strings
     <!--Chooser Country Selection-->
     <string name="SelectCountry_CountryChooser">اختر البلد</string>
     <!--************************************************************************************************-->
+    <!--Login Actvity-->
+    <string name="Signin_LoginActivity">تسجيل الدخول</string>
+    <string name="Username_LoginActivtiy">اسم المستخدم</string>
+    <String name="Password_LoginActivity">كلمة السر</String>
+    <string name="Rememberme_LoginActivity">تذكرني</string>
+    <String name="Forget_LoginActivity">هل نسيت؟</String>
+    <String name="HaveNoAccount_LoginActivity">ليس لديك حساب؟</String>
+    <String name="SigninAsGuest_LoginActivity">الدخول كضيف</String>
+    <!--**********************************************************************************************-->
 
 
 </resources>
