@@ -29,16 +29,14 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-        username=(EditText)findViewById(R.id.edittxt_username);
+        username=(EditText)findViewById(R.id.editTextTextPersonName) ;
         password=(EditText)findViewById(R.id.edittext_password);
         login_btn=(Button)findViewById(R.id.login); // button login
         login_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
+           @Override
             public void onClick(View v) {
                 login();
            //setLocale("ar");  //just for trying tost different language
-
                 Toast.makeText(LoginActivity.this, "Button is Pressed", Toast.LENGTH_SHORT).show();
             }
         });
@@ -80,4 +78,5 @@ public class LoginActivity extends AppCompatActivity {
     startActivity(refresh);
 }*/
 //--------------------------------------------------------------------------------------------------
-}
+} //end class
+
