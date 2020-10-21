@@ -7,11 +7,15 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.am.engsabbagh.thejewel.HelperClass.AttolSharedPreference;
 import com.am.engsabbagh.thejewel.Pogo.Webservice;
 import com.am.engsabbagh.thejewel.R;
 
@@ -21,7 +25,8 @@ public class LoginActivity extends AppCompatActivity {
     EditText username;  //username
     EditText password; // password
     Button login_btn;   //login button
-
+    CheckBox rememberMe;
+AttolSharedPreference attolSharedPreference=new AttolSharedPreference(this);
 
 
 
@@ -32,6 +37,8 @@ public class LoginActivity extends AppCompatActivity {
         username=(EditText)findViewById(R.id.editTextTextPersonName) ;
         password=(EditText)findViewById(R.id.edittext_password);
         login_btn=(Button)findViewById(R.id.login); // button login
+        rememberMe=(CheckBox)findViewById(R.id.remembermecheckbox);  // getting checkbox
+        LoadLoginData(); //  check if there is already username and password saved
         login_btn.setOnClickListener(new View.OnClickListener() {
            @Override
             public void onClick(View v) {
@@ -40,7 +47,19 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(LoginActivity.this, "Button is Pressed", Toast.LENGTH_SHORT).show();
             }
         });
-    }  //
+        //------------------------------------------------------------------------------------------
+        rememberMe.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked==true) {
+                    SaveLoginData();   //save data to attol shared
+                }
+            }
+        });
+    }  //end onCreate
+
+
+    //----------------------------------------------------------------------------------------------
 
     private void login() {
         String username_;
@@ -65,18 +84,32 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 //--------------------------------------------------------------------------------------------------
-    //-> Change the Language of app
-/*public void setLocale(String lang) {
-    Locale myLocale = new Locale(lang);
-    Resources res = getResources();
-    DisplayMetrics dm = res.getDisplayMetrics();
-    Configuration conf = res.getConfiguration();
-    conf.locale = myLocale;
-    res.updateConfiguration(conf, dm);
-    Intent refresh = new Intent(this, LoginActivity.class);
-    finish();
-    startActivity(refresh);
-}*/
+    //-> Save Data for login in Attol Shared Preference
+private void SaveLoginData() {
+    String username_;
+    String password_;
+    username_=username.getText().toString();//getting input text from user
+    password_=password.getText().toString(); // getting input password from user
+        attolSharedPreference.setKey("usernameLogin",username_);
+        attolSharedPreference.setKey("passwordLogin",password_);
+    Toast.makeText(this, username.getText().toString(), Toast.LENGTH_SHORT).show();
+}
+
 //--------------------------------------------------------------------------------------------------
+  private void LoadLoginData()
+  {
+      String UsernameLoaded="";
+      String PasswordLoaded="";
+      UsernameLoaded=attolSharedPreference.getKey("usernameLogin");
+      PasswordLoaded=attolSharedPreference.getKey("passwordLogin");
+      if (UsernameLoaded !=null && PasswordLoaded !=null)
+      {
+       rememberMe.setChecked(true);
+       username.setText(UsernameLoaded);
+       password.setText(PasswordLoaded);
+      }
+  }
+
+    //----------------------------------------------------------------------------------------------
 } //end class
 

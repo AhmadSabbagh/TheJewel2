@@ -14,13 +14,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:scaleType="fitXY"
         android:gravity="left|right"
 
-        app:layout_constraintHorizontal_bias="0.0"
+        android:scaleType="fitXY"
+
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndof="parent"
         app:srcCompat="@drawable/loginactivity_back" />
 
 
@@ -132,7 +132,7 @@
                 android:inputType="text" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/remembermecheckbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/RememeberMe_LoginActivity"
