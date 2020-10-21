@@ -35,8 +35,11 @@ Login Activity Strings
     <!--Chooser Country Selection-->
     <string name="SelectCountry_CountryChooser">اختر البلد</string>
     <!--************************************************************************************************-->
-
+    <!--Forget Password Acticity-->
+    <string name="ForgetPassword_Forgetpassword">يرجى إدخال عنوان البريد الإلكتروني</string>
+    <string name="Submit_Forgetpassword">إرسال</string>
     <!--**********************************************************************************************-->
+
 
 
 </resources>

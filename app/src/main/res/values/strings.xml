@@ -46,7 +46,9 @@
     <!--Chooser Country Selection-->
     <string name="SelectCountry_CountryChooser">Select Country</string>
     <!--************************************************************************************************-->
-
+    <!--Forget Password Acticity-->
+    <string name="ForgetPassword_Forgetpassword">Please Enter Your Email</string>
+    <string name="Submit_Forgetpassword">Submit</string>
     <!--**********************************************************************************************-->
 
 
