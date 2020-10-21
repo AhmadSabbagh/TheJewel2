@@ -26,9 +26,8 @@ public class LoginActivity extends AppCompatActivity {
     EditText password; // password
     Button login_btn;   //login button
     CheckBox rememberMe;
+    Button forgetbutton,register;
 AttolSharedPreference attolSharedPreference=new AttolSharedPreference(this);
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +37,23 @@ AttolSharedPreference attolSharedPreference=new AttolSharedPreference(this);
         password=(EditText)findViewById(R.id.edittext_password);
         login_btn=(Button)findViewById(R.id.login); // button login
         rememberMe=(CheckBox)findViewById(R.id.remembermecheckbox);  // getting checkbox
+        forgetbutton=(Button)findViewById(R.id.forgetbutton);
+        register=(Button)findViewById(R.id.register); // go to register activity
         LoadLoginData(); //  check if there is already username and password saved
+        //------------------------------------------------------------------------------------------
+        //-> Go to Register Activity
+        /*
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(RegisterActivity.this,ForgetPassword.class);
+                RegisterActivity.this.startActivity(intent);
+                RegisterActivity.this.finish();
+            }
+        });
+        */
+        //------------------------------------------------------------------------------------------
+        //-> Go to  Forget Password
         login_btn.setOnClickListener(new View.OnClickListener() {
            @Override
             public void onClick(View v) {
@@ -56,9 +71,17 @@ AttolSharedPreference attolSharedPreference=new AttolSharedPreference(this);
                 }
             }
         });
+        //------------------------------------------------------------------------------------------
+        //-> go to forgetpasswordactivity
+        forgetbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(LoginActivity.this,ForgetPassword.class);
+                LoginActivity.this.startActivity(intent);
+                LoginActivity.this.finish();
+            }
+        });
     }  //end onCreate
-
-
     //----------------------------------------------------------------------------------------------
 
     private void login() {

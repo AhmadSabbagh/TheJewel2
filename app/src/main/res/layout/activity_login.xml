@@ -96,13 +96,13 @@
                     android:layout_marginTop="0dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginBottom="0dp"
-                    android:layout_toStartOf="@+id/button8"
+                    android:layout_toStartOf="@+id/forgetbutton"
                     android:text="@string/password_reg_page"
                     android:textColor="#2D2E39"
                     android:textSize="16sp" />
 
                 <Button
-                    android:id="@+id/button8"
+                    android:id="@+id/forgetbutton"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
                     android:layout_alignParentTop="true"
@@ -155,7 +155,7 @@
                     android:textSize="23sp" />
 
                 <Button
-                    android:id="@+id/button11"
+                    android:id="@+id/register"
                     style="@style/Font"
                     android:layout_width="wrap_content"
                     android:layout_height="21dp"
