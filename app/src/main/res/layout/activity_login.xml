@@ -136,6 +136,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/RememeberMe_LoginActivity"
+                android:buttonTint="@color/ColorGray"
                 android:textSize="13sp" />
 
             <LinearLayout
