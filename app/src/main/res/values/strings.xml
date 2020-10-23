@@ -41,6 +41,7 @@
     <!--*************************************************************************************************-->
     <!-- PrivacyPolicy Activity-->
     <string name="acceptprivacypolicy_privacyPolicy">I accept privacy policy of application</string>
+    <string name="privacypolicyapp_privacyPolicy">Privacy Policy</string>
 
     <!--******************************************************************************************-->
     <!--Chooser Country Selection-->
