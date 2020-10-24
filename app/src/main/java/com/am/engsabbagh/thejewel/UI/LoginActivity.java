@@ -42,16 +42,14 @@ AttolSharedPreference attolSharedPreference=new AttolSharedPreference(this);
         LoadLoginData(); //  check if there is already username and password saved
         //------------------------------------------------------------------------------------------
         //-> Go to Register Activity
-        /*
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(RegisterActivity.this,ForgetPassword.class);
-                RegisterActivity.this.startActivity(intent);
-                RegisterActivity.this.finish();
+                Intent intent=new Intent(LoginActivity.this,RegisterActivity.class);
+                LoginActivity.this.startActivity(intent);
+                LoginActivity.this.finish();
             }
         });
-        */
         //------------------------------------------------------------------------------------------
         //-> Go to  Forget Password
         login_btn.setOnClickListener(new View.OnClickListener() {
