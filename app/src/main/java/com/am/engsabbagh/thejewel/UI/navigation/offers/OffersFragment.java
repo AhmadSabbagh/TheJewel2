@@ -1,4 +1,4 @@
-package com.am.engsabbagh.thejewel.UI.navigation.home;
+package com.am.engsabbagh.thejewel.UI.navigation.offers;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -14,24 +14,24 @@ import android.view.ViewGroup;
 
 import com.am.engsabbagh.thejewel.R;
 
-public class HomeFragment extends Fragment {
+public class OffersFragment extends Fragment {
 
-    private HomeViewModel mViewModel;
+    private OffersViewModel mViewModel;
 
-    public static HomeFragment newInstance() {
-        return new HomeFragment();
+    public static OffersFragment newInstance() {
+        return new OffersFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return inflater.inflate(R.layout.fragment_offers, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(OffersViewModel.class);
         // TODO: Use the ViewModel
     }
 

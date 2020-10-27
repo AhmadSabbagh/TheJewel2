@@ -1,4 +1,4 @@
-package com.am.engsabbagh.thejewel.UI.navigation.dashboard;
+package com.am.engsabbagh.thejewel.UI.navigation.cart;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,18 +14,17 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.am.engsabbagh.thejewel.R;
 
+public class CartFragment extends Fragment {
 
-public class DashboardFragment extends Fragment {
-
-    private DashboardViewModel dashboardViewModel;
+    private CartViewModel cartViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        cartViewModel =
+                new ViewModelProvider(this).get(CartViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_cart, container, false);
+        final TextView textView = root.findViewById(R.id.text_home);
+        cartViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

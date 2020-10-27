@@ -7,15 +7,15 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.am.engsabbagh.thejewel.UI.navigation.home.HomeFragment"
+        android:name="com.am.engsabbagh.thejewel.UI.navigation.cart.CartFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_cart" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.am.engsabbagh.thejewel.UI.navigation.dashboard.DashboardFragment"
+        android:name="com.am.engsabbagh.thejewel.UI.navigation.profile.ProfileFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/navigation_notifications"
