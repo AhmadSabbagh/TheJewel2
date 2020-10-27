@@ -1,4 +1,4 @@
-package com.am.engsabbagh.thejewel.UI.ui.dashboard;
+package com.am.engsabbagh.thejewel.UI.navigation.dashboard;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
