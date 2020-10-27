@@ -203,5 +203,4 @@
         app:srcCompat="@drawable/login_activity_icon" />
 
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>

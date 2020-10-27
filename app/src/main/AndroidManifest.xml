@@ -18,7 +18,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".UI.ForgetPassword"></activity>
+        <activity
+            android:name=".UI.MainActivity"
+            android:label="@string/title_activity_main"></activity>
+        <activity android:name=".UI.ForgetPassword" />
         <activity android:name=".UI.CountryChooser" />
         <activity android:name=".UI.LoginActivity" />
         <activity
