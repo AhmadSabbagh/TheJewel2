@@ -37,10 +37,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/background"
-        app:layout_constraintVertical_bias="0.951" />
+        app:layout_constraintVertical_bias="0.97" />
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -66,6 +65,7 @@
                 style="@style/Font"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="left"
                 android:text="@string/username_reg_page"
                 android:textColor="#2D2E39"
                 android:textSize="16sp" />
@@ -77,16 +77,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:gravity="left"
                 android:hint="@string/username_reg_page"
                 android:inputType="textPersonName" />
 
             <LinearLayout
                 android:id="@+id/Linearlayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:gravity="left">
 
                 <TextView
                     android:id="@+id/textView2"
+                    style="@style/Font"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
@@ -98,6 +101,7 @@
                     android:layout_marginBottom="0dp"
                     android:layout_toStartOf="@+id/forgetbutton"
                     android:layout_weight="1"
+                    android:gravity="left"
                     android:text="@string/password_reg_page"
                     android:textColor="#2D2E39"
                     android:textSize="16sp" />
@@ -115,7 +119,7 @@
                     android:layout_marginRight="0dp"
                     android:layout_marginBottom="0dp"
                     android:background="?android:attr/selectableItemBackground"
-                    android:gravity="center|top"
+                    android:gravity="left|center"
                     android:text="@string/forget_LoginActivity"
                     android:textAllCaps="false"
                     android:textSize="12sp" />
@@ -128,15 +132,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:gravity="start"
+                android:gravity="left"
                 android:hint="@string/password_reg_page"
-                android:inputType="text" />
+                android:inputType="textPassword" />
 
             <CheckBox
                 android:id="@+id/remembermecheckbox"
+                style="@style/Font"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/ColorGray"
+                android:gravity="left|center"
                 android:text="@string/RememeberMe_LoginActivity"
                 android:textSize="13sp" />
 
@@ -190,7 +196,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="left|right"
-        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/signin_textview"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/signin_textview"
