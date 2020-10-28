@@ -27,10 +27,4 @@
         android:icon="@drawable/bottomnavigation_profile"
         android:title="Profile" />
 
-
-
-
-
-
-
 </menu>

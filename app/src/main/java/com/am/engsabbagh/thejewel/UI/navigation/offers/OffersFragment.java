@@ -1,5 +1,6 @@
 package com.am.engsabbagh.thejewel.UI.navigation.offers;
 
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
@@ -11,12 +12,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.am.engsabbagh.thejewel.R;
 
 public class OffersFragment extends Fragment {
 
-    private OffersViewModel mViewModel;
+    private OffersViewModel offersViewModel;
 
     public static OffersFragment newInstance() {
         return new OffersFragment();
@@ -25,14 +27,17 @@ public class OffersFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_offers, container, false);
-    }
+        offersViewModel = new ViewModelProvider(this).get(OffersViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_offers, container, false);
+        final TextView text = (TextView) root.findViewById(R.id.text_offers);
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(OffersViewModel.class);
-        // TODO: Use the ViewModel
-    }
+        offersViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+            @Override
+            public void onChanged(String s) {
+                text.setText(s);
+            }
+        });
+        return root;
+    }//end onCreate
+} //end class
 
-}

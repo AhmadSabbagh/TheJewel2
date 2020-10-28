@@ -55,9 +55,13 @@ AttolSharedPreference attolSharedPreference=new AttolSharedPreference(this);
         login_btn.setOnClickListener(new View.OnClickListener() {
            @Override
             public void onClick(View v) {
-                login();
+           //     login();
            //setLocale("ar");  //just for trying tost different language
                 Toast.makeText(LoginActivity.this, "Button is Pressed", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+                LoginActivity.this.startActivity(intent);
+                LoginActivity.this.finish();
+
             }
         });
         //------------------------------------------------------------------------------------------
